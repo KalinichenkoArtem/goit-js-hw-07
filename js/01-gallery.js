@@ -8,7 +8,7 @@ const cardsMarkup = createGalleryItemsMarkup(galleryItems);
 
 // Render
 
-gallery.insertAdjacentHTML('afterbegin', cardsMarkup);
+gallery.insertAdjacentHTML('beforeend', cardsMarkup);
 
 function createGalleryItemsMarkup(galleryItems) {
     return galleryItems.map(({ preview, original, description }) => {
@@ -24,6 +24,8 @@ function createGalleryItemsMarkup(galleryItems) {
         </div>`;
 }).join("");
 };
+
+
 
 // Render
 
