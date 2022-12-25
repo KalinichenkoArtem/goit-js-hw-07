@@ -3,8 +3,12 @@ import { galleryItems } from './gallery-items.js';
 
 console.log(galleryItems);
 
+// Const
+
 const gallery = document.querySelector(".gallery");
 const cardsMarkup = createGalleryItemsMarkup(galleryItems);
+
+// Const
 
 // Render
 
@@ -24,8 +28,6 @@ function createGalleryItemsMarkup(galleryItems) {
         </div>`;
 }).join("");
 };
-
-
 
 // Render
 
