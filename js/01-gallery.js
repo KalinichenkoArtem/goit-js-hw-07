@@ -33,7 +33,7 @@ function createGalleryItemsMarkup(galleryItems) {
 
 // addEventListener
 
-gallery.addEventListener('click', onGalleryClick);
+gallery.addEventListener('click', onGalleryClick, {onShow: (instance) => {}, onClose: (instance) => {}});
 
 function onGalleryClick(event) {
     event.preventDefault();
@@ -45,7 +45,7 @@ function onGalleryClick(event) {
 
     const instance = basicLightbox.create(`<img
                 src="${modalImage}">`);
-
+    
     instance.show();    
 };
 
